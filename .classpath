@@ -2,9 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/roma/Downloads/rtm-java/OpenRTM-aist/1.0/jar/OpenRTM-aist-1.0.0.jar"/>
-	<classpathentry kind="lib" path="/home/roma/Downloads/rtm-java/OpenRTM-aist/1.0/jar/commons-cli-1.1.jar"/>
-	<classpathentry kind="lib" path="/home/roma/Downloads/rtm-java/OpenRTM-aist/1.0/jar/rtcd.jar"/>
-	<classpathentry kind="lib" path="/home/roma/Downloads/rtm-java/OpenRTM-aist/1.0/jar/rtcprof.jar"/>
+	<classpathentry kind="lib" path="/Users/ysuga/rtm/jar/OpenRTM-aist-1.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/ysuga/rtm/jar/commons-cli-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

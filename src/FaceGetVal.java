@@ -1,6 +1,6 @@
 // -*- Java -*-
 /*!
- * @file faceGetVal.java
+ * @file FaceGetVal.java
  * @date $Date$
  *
  * $Id$
@@ -14,16 +14,16 @@ import jp.go.aist.rtm.RTC.RegisterModuleFunc;
 import jp.go.aist.rtm.RTC.util.Properties;
 
 /*!
- * @class faceGetVal
+ * @class FaceGetVal
  * @brief ModuleDescription
  */
-public class faceGetVal implements RtcNewFunc, RtcDeleteFunc, RegisterModuleFunc {
+public class FaceGetVal implements RtcNewFunc, RtcDeleteFunc, RegisterModuleFunc {
 
 //  Module specification
 //  <rtc-template block="module_spec">
     public static String component_conf[] = {
-    	    "implementation_id", "faceGetVal",
-    	    "type_name",         "faceGetVal",
+    	    "implementation_id", "FaceGetVal",
+    	    "type_name",         "FaceGetVal",
     	    "description",       "ModuleDescription",
     	    "version",           "1.0.0",
     	    "vendor",            "romau",
@@ -42,7 +42,7 @@ public class faceGetVal implements RtcNewFunc, RtcDeleteFunc, RegisterModuleFunc
 //  </rtc-template>
 
     public RTObject_impl createRtc(Manager mgr) {
-        return new faceGetValImpl(mgr);
+        return new FaceGetValImpl(mgr);
     }
 
     public void deleteRtc(RTObject_impl rtcBase) {
@@ -51,6 +51,6 @@ public class faceGetVal implements RtcNewFunc, RtcDeleteFunc, RegisterModuleFunc
     public void registerModule() {
         Properties prop = new Properties(component_conf);
         final Manager manager = Manager.instance();
-        manager.registerFactory(prop, new faceGetVal(), new faceGetVal());
+        manager.registerFactory(prop, new FaceGetVal(), new FaceGetVal());
     }
 }

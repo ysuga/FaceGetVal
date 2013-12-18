@@ -1,6 +1,6 @@
 // -*- Java -*-
 /*!
- * @file faceGetValComp.java
+ * @file FaceGetValComp.java
  * @brief Standalone component
  * @date $Date$
  *
@@ -13,18 +13,18 @@ import jp.go.aist.rtm.RTC.RTObject_impl;
 import jp.go.aist.rtm.RTC.util.Properties;
 
 /*!
- * @class faceGetValComp
+ * @class FaceGetValComp
  * @brief Standalone component Class
  *
  */
-public class faceGetValComp implements ModuleInitProc {
+public class FaceGetValComp implements ModuleInitProc {
 
     public void myModuleInit(Manager mgr) {
-      Properties prop = new Properties(faceGetVal.component_conf);
-      mgr.registerFactory(prop, new faceGetVal(), new faceGetVal());
+      Properties prop = new Properties(FaceGetVal.component_conf);
+      mgr.registerFactory(prop, new FaceGetVal(), new FaceGetVal());
 
       // Create a component
-      RTObject_impl comp = mgr.createComponent("faceGetVal");
+      RTObject_impl comp = mgr.createComponent("FaceGetVal");
       if( comp==null ) {
     	  System.err.println("Component create failed.");
     	  System.exit(0);
@@ -83,7 +83,7 @@ public class faceGetValComp implements ModuleInitProc {
 
         // Set module initialization proceduer
         // This procedure will be invoked in activateManager() function.
-        faceGetValComp init = new faceGetValComp();
+        FaceGetValComp init = new FaceGetValComp();
         manager.setModuleInitProc(init);
 
         // Activate manager and register to naming service
